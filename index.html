@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant Bill</title>
+</head>
+<body>
+    <div class="bill-input-secion">
+        <input type="text" placeholder="Item Name" id="Item-name">
+        <input type="number" name="quantity" id="quantity" placeholder="quantity" value="1">
+        <input type="number" placeholder="Price" id="Price">
+        <button id="item-add-btn">Add To Bill</button>
+    </div>
+    <div class="bill" id="bill">
+        <h2>Restaurant Bill</h2>
+        <table>
+            <thead>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Amount</th>
+            </thead>
+            <tbody id="table-body">
+                <!-- <tr>
+                    <td>Egg</td>
+                    <td>1</td>
+                    <td>100</td>
+                    <td>200</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <button id="printBtn">Print</button>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
