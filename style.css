@@ -12,6 +12,10 @@ body {
     text-align: center;
 }
 
+#digital-signature {
+    visibility: hidden;
+}
+
 .bill-input-secion {
     margin: 30px auto;
     width: 80%;
@@ -37,7 +41,6 @@ body {
 
 table {
     width: 100%;
-    /* page-break-before: always; */
 }
 table,th,td {
     border: 1px solid #858585;
@@ -49,9 +52,9 @@ th {
     color: white;
 }
 
-thead {
+/* thead {
     margin-left: 2rem;
-}
+} */
 
 
 #printBtn {
@@ -70,11 +73,19 @@ thead {
 
 @media print {
     body * {
-        display: none;
+        visibility: hidden;
+    }
+
+    #printBtn {
+        visibility: hidden;
     }
 
     .bill, .bill * {
-        display: block;
+        visibility: visible;
+    }
+
+    #digital-signature {
+        visibility: visible;
     }
 
 }
